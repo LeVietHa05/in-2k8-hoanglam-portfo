@@ -120,7 +120,7 @@ export default function MathPage() {
                 </div>
             </div>
 
-            <div className="-space-y-20 -mt-40">
+            <div className={`-space-y-20 -mt-40 ${active ? '' : "*:hover:scale-105"}`}>
                 <div className={`relative ${active === 'a' ? "h-[1140]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('a')}>
                         <div className="text-[89px] font-[Judson] font-bold ">

@@ -222,7 +222,7 @@ export default function SoilPage() {
                 </div>
             </div>
 
-            <div className="-space-y-20 -mt-40">
+            <div className={`-space-y-20 -mt-40 ${active ? '' : "*:hover:scale-105"}`}>
                 <div className={`relative ${active === 'a' ? "h-[1140]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <Image className="h-98" src={`${active === 'a' ? '/soil-bg-1`.png' : '/soil-bg-1.png'}`} alt="" fill></Image>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('a')}>

@@ -200,7 +200,7 @@ const gal4 = [
     },
 ]
 
-export default function MathPage() {
+export default function Athletic() {
     const [active, setActive] = useState<string | null>(null)
 
     const handleClick = (key: string) => {
@@ -219,7 +219,7 @@ export default function MathPage() {
                 </div>
             </div>
 
-            <div className="-space-y-20 -mt-40">
+            <div className={`-space-y-20 -mt-40 ${active ? '' : "*:hover:scale-105"}`}>
                 <div className={`relative ${active === 'a' ? "h-[1600]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('a')}>
                         <div className="text-[89px] font-[Judson] font-bold text-left">
@@ -291,6 +291,7 @@ export default function MathPage() {
                     </div>
                 </div>
             </div>
+            <Image src={'/mystory-bg-2.png'} alt="" width={1600} height={900} className="absolute bottom-0 left-0 z-0"></Image>
         </div>
     )
 }
