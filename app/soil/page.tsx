@@ -458,7 +458,8 @@ export default function SoilPage() {
                                     <div>Another webinar I hosted during my time at Soils and Fertilizer Institute was with MsC Eliot Vas and Professor Pham Quang Ha - Vice President of the Soil Federation of Vietnam. Meeting Eliot helped me learn about the agriculture and soil environment sector in Europe</div>
                                 </div>
                                 <div className="flex-5">
-                                    <Image src={'/soil-40.png'} alt="" width={627} height={354}></Image>
+                                    <iframe width="627" height="354" src="https://www.youtube.com/embed/Ee49N1dFkZ8" title="[ReSoil] ReSoil và hành trình kết nối quốc tế" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
                                     <div className="pb-6 border-b-2">Stepping into the Soils and Fertilizers Institute on my first day, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets soil.</div>
                                     <Image className="pt-6" src={'/soil-41.png'} alt="" width={627} height={354}></Image>
                                     <Image src={'/soil-42.png'} alt="" width={627} height={354}></Image>
@@ -484,6 +485,7 @@ export default function SoilPage() {
                     </div>
                 </div>
             </div>
+            <Image src={'/mystory-bg-2.png'} alt="" width={1600} height={900} className="absolute bottom-0 left-0 z-0"></Image>
         </div >
     )
 }
