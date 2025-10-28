@@ -173,8 +173,8 @@ export default function MathPage() {
                             <br />
                             Through HMathspace, I share monthly lectures on Facebook – over 10 videos translating linear algebra and calculus into inspiration, inviting young minds to see math as the language of AI and possibility.
                             <div className="flex">
-                                <Image src={'/math-22.png'} alt="" width={569} height={326}></Image>
-                                <Image src={'/math-23.png'} alt="" width={569} height={326}></Image>
+                                <iframe width="569" height="326" src="https://www.youtube.com/embed/Hd6d-AJAohs" title="[HMATH SPACE] Toán cao cấp" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                <iframe width="569" height="326" src="https://www.youtube.com/embed/A_ubTld2epY" title="[HMATH SPACE] Toán cao cấp" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                             </div>
                             Seeing the impact of my series, over three local authorities and secondary schools invited me to lecture – sharing the beauty of math, inspiring curiosity, and guiding students through the first steps of linear algebra and AI.
                             <div className="flex">
