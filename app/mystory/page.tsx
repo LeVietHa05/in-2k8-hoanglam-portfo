@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image"
 import { useState } from "react"
+import { useRouter } from "next/navigation" 
 
 export default function Mystory() {
     const [activesoil, setactivesoil] = useState(false)
@@ -25,6 +26,17 @@ export default function Mystory() {
         setactiveathletic(!activeathletic)
     }
 
+    
+    const router = useRouter()
+
+    const handleGarden = () => {
+    setactivesoil(false)
+    setactivemath(false)
+    setactiveathletic(false)
+    router.push("/garden")  // chuyển sang trang garden
+    }
+
+
     return (
         <div className="w-full p-23 relative">
             <div className="relative z-1">
@@ -42,11 +54,10 @@ export default function Mystory() {
             <div className={`${!activesoil ? 'h-[527px]' : 'h-[1300px]'} relative  -mt-55 overflow-hidden transition-all duration-1000 z-1`}>
                 <Image src={`${!activesoil ? '/mystory-bg-4-1.png' : '/mystory-bg-4.png'}`} fill alt="" className="absolute -right-10 -bottom-10 "></Image>
                 <div className="relative z-1 px-[69px] py-[25] text-[28px] text-[#065A4C] font-[Abhaya_Libre]">
-                    <div className=" pb-10 text-[89px] font-[Judson] font-bold flex">
+                    <div className=" pb-10 text-[89px] font-[Judson] font-bold flex" onClick={handleSoil}>
                         <div>
                             Soil Odyssey
                         </div>
-                        <Image onClick={handleSoil} src={'/arrow-left-.svg'} alt="" width={77} height={77}></Image>
                     </div>
                     <div className={`${!activesoil ? 'hidden' : 'block'}`}>
                         Step into the vibrant journey of Phan Hoang Lam, an 12th-grade dreamer at Hanoi-Amsterdam High School, where a blazing passion for math and agriculture ignites a soul-deep mission for soil and agriculture.
@@ -67,8 +78,7 @@ export default function Mystory() {
             <div className={`${!activesoil ? "-mt-87" : "-mt-50"} ${!activemath ? "h-[586px]" : "h-[1265px]"} relative overflow-hidden transition-all duration-1000 z-1`}>
                 <Image src={`${!activemath ? '/mystory-bg-5-1.png' : '/mystory-bg-5.png'}`} fill alt="" className="absolute -right-10 -bottom-10 "></Image>
                 <div className="relative z-1 px-[69px] py-[25] text-[28px] text-[#065A4C] font-[Abhaya_Libre]">
-                    <div className=" pb-10 text-[89px] font-[Judson] font-bold justify-end flex">
-                        <Image onClick={handleMath} src={'/arrow-left-.svg'} alt="" width={77} height={77}></Image>
+                    <div className=" pb-10 text-[89px] font-[Judson] font-bold justify-end flex" onClick={handleMath}>
                         <div>
                             Applied Mathematics
                         </div>
@@ -90,11 +100,10 @@ export default function Mystory() {
             <div className={`${activesoil ? '-mt-100' : `${activemath ? "-mt-60" : "-mt-100"}`} ${!activeathletic ? " h-[487px]" : " h-[1030px]"} relative overflow-hidden transition-all duration-1000 z-1`}>
                 <Image src={`${!activeathletic ? '/mystory-bg-6-1.png' : '/mystory-bg-6.png'}`} fill alt="" className="absolute -right-10 -bottom-10 "></Image>
                 <div className="relative z-1 px-[69px] py-[25] text-[28px] text-[#065A4C] font-[Abhaya_Libre]">
-                    <div className=" pb-10 text-[89px] font-[Judson] font-bold flex">
+                    <div className=" pb-10 text-[89px] font-[Judson] font-bold flex" onClick={handelAthletic}>
                         <div>
                             Athletic Pioneer
                         </div>
-                        <Image onClick={handelAthletic} src={'/arrow-left-.svg'} alt="" width={77} height={77}></Image>
                     </div>
                     <div className={`flex my-10 gap-4 ${!activeathletic ? 'hidden' : 'block'}`}>
                         <div className=""><Image src={'/mystory-6.png'} alt="" width={276} height={367}></Image></div>
@@ -104,6 +113,17 @@ export default function Mystory() {
                     <div className={`flex my-10 ${!activeathletic ? 'hidden' : 'block'}`}>
                         <div className="flex-1">As a humble storyteller threading memories with care, I lead you beyond the classroom, where I discovered math woven into the fabric of sports: swimming, badminton, and chess. Swimming taught me rhythm and endurance; chess unveiled strategy and foresight; badminton honed my reflexes and balance. I realized - much like in nature - math doesn’t stand alone; it pulses in every motion, in the poise of my body gliding through water, in the precision of a shuttlecock’s strike. Reflecting now, I see my childhood as a sum of simple joys: earth, people, curiosity, and patience. I grew alongside the land, and it grew with me - teaching me to observe, to trust nature’s rhythms, and to move slowly to grasp deeply.
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`${!activesoil ? "-mt-87" : "-mt-50"} ${!activemath ? "h-[386px]" : "h-[1000px]"} relative overflow-hidden transition-all duration-1000 z-1`}>
+                <Image src={`${!activemath ? '/mystory-bg-5-1.png' : '/mystory-bg-5.png'}`} fill alt="" className="absolute -right-10 -bottom-10 "></Image>
+                <div className="relative z-1 px-[69px] py-[25] text-[28px] text-[#065A4C] font-[Abhaya_Libre]">
+                    <div className=" pb-10 text-[89px] font-[Judson] font-bold justify-end flex" onClick={handleGarden}>
+                        <div>
+                            My Little Graden
                         </div>
                     </div>
                 </div>

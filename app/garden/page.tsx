@@ -39,7 +39,7 @@ const data2 = [
 const data3 = [
     {
         i: "/garden-13.png",
-        t: "In the heated debates of the IvyPrep Debate Championship, I grasped a profound truth: logical thinking and presentation skills are two sides of the same coin – mathematics only finds its true purpose when we can interpret it for others to understand. ",
+        t: "In the heated debates of the IvyPrep Debate Championship - where I placed 2nd -  I grasped a profound truth: logical thinking and presentation skills are two sides of the same coin – mathematics only finds its true purpose when we can interpret it for others to understand.",
         l: "https://giaoducthoidai.vn/hoc-sinh-ha-noi-tranh-bien-tieng-anh-ve-goc-khuat-noi-tam-con-nguoi-post517429.html"
     }, {
         i: "/garden-14.png",
@@ -52,7 +52,7 @@ const data3 = [
         t: "Through the World Scholar’s Cup, I strengthened my analytical reasoning and interdisciplinary thinking — connecting science, logic and literature to real-world problems."
     }, {
         i: "/garden-17.png",
-        t: "I conversed with international peers about global challenges — environment, energy, technology — and realized that mathematical reasoning could unlock solutions to them all."
+t: "I conversed with international peers about global challenges — environment, energy, technology — and realized that mathematical reasoning could unlock solutions to them all. That year, I placed 3rd Globally, ranking higher than teams from 20+ countries",
     }, {
         i: "/garden-18.png",
         t: "After all, Debate is a field that trained me to be a person who could communicate my thoughts confidently, fluently, and expressively."
@@ -179,7 +179,7 @@ export default function MathPage() {
             <div className={`-space-y-20 -mt-40 ${active ? '' : "*:hover:scale-105"}`}>
                 <div className={`relative ${active === 'a' ? "h-[1600]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('a')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[73px] font-[Judson] font-bold text-left">
                             Summer Program
                         </div>
                         <div className={`${active === 'a' ? 'block' : 'hidden'}`}>
@@ -222,7 +222,7 @@ export default function MathPage() {
 
                 <div className={`relative ${active === 'b' ? "h-[1200]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('b')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[73px] font-[Judson] font-bold text-left">
                             Delta Global School Program
                         </div>
                         <div className={`${active === 'b' ? 'block' : 'hidden'}`}>
@@ -240,7 +240,7 @@ export default function MathPage() {
 
                 <div className={`relative ${active === 'c' ? "h-[1000]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('c')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[73px] font-[Judson] font-bold text-left">
                             Class President Hanoi Amsterdam
                         </div>
                         <div className={`${active === 'c' ? 'block' : 'hidden'}`}>
@@ -262,7 +262,7 @@ export default function MathPage() {
 
                 <div className={`relative ${active === 'd' ? "h-[1300]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('d')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[73px] font-[Judson] font-bold text-left">
                             Debate & World Scholars Cup
                         </div>
                         <div className={`${active === 'd' ? 'block' : 'hidden'}`}>
@@ -275,7 +275,17 @@ export default function MathPage() {
                                             <Image src={e.i} alt="" height={252} width={367}></Image>
                                             <div className="text-base p-3">
                                                 {e.t}
-                                                {e.l && <Link href={e.l} className="font-bold">[Click here]</Link>}
+                                                {e.l && (
+                                                <Link
+                                                    href={e.l}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="font-bold text-[#065A4C] hover:underline"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                >
+                                                    [Click here]
+                                                </Link>
+                                                )}
                                             </div>
                                         </div>
                                     )
@@ -287,7 +297,7 @@ export default function MathPage() {
 
                 <div className={`relative ${active === 'e' ? "h-[600]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('e')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[73px] font-[Judson] font-bold text-left">
                             Volunteering
                         </div>
                         <div className={`${active === 'e' ? 'block' : 'hidden'}`}>

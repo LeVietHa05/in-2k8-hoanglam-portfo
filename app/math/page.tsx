@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import Gallery from "../components/gallery"
 
 const gal1 = [
@@ -25,15 +26,15 @@ const gal1 = [
     {
         imglink: "/math-4.png",
         title: "2024 -  National",
-        describe: "Bronze Medal, National Students Olympiad in Mathematics. https://www.youtube.com/watch?v=qIAgJ-vCABA",
+        describe: "Bronze Medal, National Students Olympiad in Mathematics.",
         link: "https://www.youtube.com/watch?v=qIAgJ-vCABA",
     },
-    {
-        imglink: "/math-5.png",
-        title: "2023 -  International",
-        describe: "Southeast Asia Mathematics Olympiad",
-        link: "",
-    },
+    // {
+    //     imglink: "/math-5.png",
+    //     title: "2023 -  International",
+    //     describe: "Southeast Asia Mathematics Olympiad",
+    //     link: "",
+    // },
     {
         imglink: "/math-6.png",
         title: "2023 -  State",
@@ -97,7 +98,7 @@ const gal1 = [
     {
         imglink: "/math-16.png",
         title: "2019 -  International",
-        describe: "HonTop 10%, International Kangaroo Mathematic Olympiad",
+        describe: "Top 10%, International Kangaroo Mathematic Olympiad",
         link: "",
     },
 ]
@@ -130,12 +131,12 @@ export default function MathPage() {
                             <div className="text-[28px]">
                                 Honored with national and international math awards, I’ve turned problem-solving into both passion and pursuit – each medal marking not just victory, but a deeper understanding of how logic shapes the world.
                             </div>
-                            <Gallery items={gal1} />
+                            <Gallery items={gal1} isMathPage/>
                         </div>
 
                     </div>
                 </div>
-                <div className={`relative ${active === 'b' ? "h-[1900]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'b' ? "h-[2100]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('b')}>
                         <div className="text-[89px] font-[Judson] font-bold ">
                             Research
@@ -155,7 +156,7 @@ export default function MathPage() {
                             During that journey, I stumbled upon a chapter intertwining matrices and number theory. An example on the balancing matrix of the Fibonacci sequence caught my eye, and a quiet question bloomed within me: could this elegant harmony be extended – to the Pell and Pell–Lucas sequences, too?
                             <Image src={'/math-20.png'} alt="" width={1103} height={422}></Image>
                             <div className="flex my-10 gap-10">
-                                <Image src={'/math-21.png'} alt="" width={373} height={388}></Image>
+                                <Image src={'/math-32.png'} alt="" width={549} height={572}></Image>
                                 <div>What began as a spark – a question of balance in Fibonacci’s rhythm – grew into a generalized matrix framework uniting Fibonacci and Pell models. Through linear algebra and induction, I proved their hidden harmonies, unveiling Binet-type, Cassini-like, and divisibility properties through determinants and eigenvalues. The work now lives on in the HNUE Journal of Science: Natural Science.
                                 </div>
                             </div>
@@ -186,7 +187,7 @@ export default function MathPage() {
                             <div className="flex gap-15">
                                 <div>The surprise came when Hanoi–Amsterdam High School for the Gifted, class 8A – the city’s specialized math class – invited me to teach matrices. Standing before those bright minds, I felt both nostalgia and joy, sharing the very language that once shaped my own journey.
                                 </div>
-                                <Image src={'/math-26.png'} alt="" width={591} height={339}></Image>
+                                {/* <Image src={'/math-26.png'} alt="" width={591} height={339}></Image> */}
                             </div>
                         </div>
                     </div>
@@ -206,7 +207,44 @@ export default function MathPage() {
                                     <Image src={'/math-28.png'} alt="" width={290} height={410}></Image>
                                 </div>
                                 <div className="w-[538]">In collaboration with Prof. Trinh Van Chien at HUST, I developed a portable EEG device and explored the symphony of brain waves through machine learning – collecting over a hundred datasets to train a Support Vector Machine model that analyzed brainwave data and classify it into sleepy and awake
-                                    Github: https://github.com/gitLamHoang/Classfying-brain-wave-state
+                                <br />
+                                <Link
+                                    href="https://github.com/gitLamHoang/Classfying-brain-wave-state"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="inline-flex items-center gap-3"
+                                    >
+                                    <span
+                                        style={{
+                                        color: '#065A4C',
+                                        textAlign: 'justify',
+                                        fontFamily: 'Abhaya Libre',
+                                        fontSize: '28px',
+                                        fontStyle: 'normal',
+                                        fontWeight: 700,
+                                        lineHeight: '36px',
+                                        textDecorationLine: 'underline',
+                                        textDecorationStyle: 'solid',
+                                        textDecorationSkipInk: 'auto',
+                                        textDecorationThickness: 'auto',
+                                        textUnderlineOffset: 'auto',
+                                        textUnderlinePosition: 'from-font',
+                                        }}
+                                    >
+                                        GitHub:
+                                    </span>
+
+                                    <div className="w-[53px] h-[53px] bg-white rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition-transform duration-200">
+                                        <Image
+                                        src="/github.png"
+                                        alt="GitHub Repository"
+                                        width={47}
+                                        height={47}
+                                        className="rounded-full"
+                                        />
+                                    </div>
+                                    </Link>
                                 </div>
                             </div>
                             <br /><br />

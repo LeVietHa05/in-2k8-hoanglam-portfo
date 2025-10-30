@@ -4,36 +4,35 @@ import Image from "next/image"
 import Gallery from "../components/gallery"
 import Link from "next/link"
 
-
 const gal1 = [{
     imglink: "/soil-2.png",
     title: "Silver Medal",
-    describe: "Led a 3-member team to develop Restorator-Bot, a robot that revitalizes dead lands by collecting debris and removing obstacles. https://www.youtube.com/watch?v=_2tThEfbVnU",
+    describe: "Led a 3-member team to develop Restorator-Bot, a robot that revitalizes dead lands by collecting debris and removing obstacles.",
     link: "https://www.youtube.com/watch?v=_2tThEfbVnU",
 }, {
     imglink: "/soil-3.png",
     title: "Silver Medal",
-    describe: "Trained a Computer Vision model to classify waste",
+    describe: "Developed a dataset containing 2000 images to train a Computer Vision model to classify waste",
     link: "",
 }, {
     imglink: "/soil-4.png",
     title: "Gold Medal",
-    describe: "LDeveloped an LSTM model forecasting soil moisture trends.  https://www.youtube.com/watch?v=lUgG_Kv0j9g",
+    describe: "LDeveloped an LSTM model forecasting soil moisture trends.",
     link: "https://www.youtube.com/watch?v=lUgG_Kv0j9g",
 }, {
     imglink: "/soil-5.png",
     title: "Gold Medal",
     describe: "Prepare a machine learning dataset for printed circuit board waste classification",
-    link: "https://www.youtube.com/watch?v=_2tThEfbVnU",
+    link: "",
 }, {
     imglink: "/soil-6.png",
     title: "Gold Award",
-    describe: "Applied AI and computer vision to irrigation management, optimizing water use and crop health. https://www.youtube.com/watch?v=KcPwgelbkKo",
+    describe: "Applied AI and computer vision to irrigation management, optimizing water use and crop health.",
     link: "https://www.youtube.com/watch?v=KcPwgelbkKo",
 }, {
     imglink: "/soil-7.png",
     title: "Gold Medal",
-    describe: "Manipulating photocatalytic reactions to cleanse the contaminated water. https://www.youtube.com/watch?v=D",
+    describe: "Manipulating photocatalytic reactions to cleanse the contaminated water.",
     link: "https://www.youtube.com/watch?v=D",
 },]
 
@@ -98,46 +97,47 @@ const per2 = [
 
 const per3 = [
     {
-        imglink: "/soil-24.png",
+        imglink: "/soil-57.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-25.png",
+        imglink: "/soil-58.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-26.png",
+        imglink: "/soil-59.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-27.png",
+        imglink: "/soil-60.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-28.png",
+        imglink: "/soil-61.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-29.png",
-        title: "",
-        describe: "",
-        link: ""
-    }, {
-        imglink: "/soil-30.png",
-        title: "",
-        describe: "",
-        link: ""
-    }, {
-        imglink: "/soil-31.png",
+        imglink: "/soil-62.png",
         title: "",
         describe: "",
         link: ""
     }
+    // , {
+    //     imglink: "/soil-30.png",
+    //     title: "",
+    //     describe: "",
+    //     link: ""
+    // }, {
+    //     imglink: "/soil-31.png",
+    //     title: "",
+    //     describe: "",
+    //     link: ""
+    // }
 ]
 
 const gal4 = [
@@ -213,7 +213,7 @@ export default function SoilPage() {
     return (
         <div className="w-full p-23 relative text-[#065A4C] font-[Abhaya_Libre] text-[28px]">
             <div className="relative z-1">
-                <Image src={'/soil-1.png'} alt="" width={1256} height={728} ></Image>
+                <Image src={'/soil-55.png'} alt="" width={1256} height={728} ></Image>
                 <div className=" p-14 rounded-2xl relative -top-20 h-98">
                     <Image className="h-98" src={'/soil-bg-1.png'} alt="" fill></Image>
                     <div className="relative z-1 text-[#065A4C] text-[28px] text-justify font-[Abhaya_Libre]">
@@ -223,7 +223,7 @@ export default function SoilPage() {
             </div>
 
             <div className={`-space-y-20 -mt-40 ${active ? '' : "*:hover:scale-105"}`}>
-                <div className={`relative ${active === 'a' ? "h-[1140]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'a' ? "h-[1160]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <Image className="h-98" src={`${active === 'a' ? '/soil-bg-1`.png' : '/soil-bg-1.png'}`} alt="" fill></Image>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('a')}>
                         <div className="text-[89px] font-[Judson] font-bold ">
@@ -339,7 +339,15 @@ export default function SoilPage() {
                                                 <div className="flex-1 text-base" key={i}>
                                                     <Image src={each.image} alt="" width={277} height={190}></Image>
                                                     {each.text} {each.link && (
-                                                        <Link className="font-bold" href={each.link}>[View in here]</Link>
+                                                    <Link
+                                                        href={each.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="font-bold text-[#065A4C] hover:underline"
+                                                        onClick={(e) => e.stopPropagation()}
+                                                    >
+                                                        [View in here]
+                                                    </Link>
                                                     )}
                                                 </div>
                                             )
@@ -359,7 +367,44 @@ export default function SoilPage() {
                                 <div className="font-bold">
                                     3. SoilNet
                                 </div>
-                                <Link href={'https://github.com/gitLamHoang/SoilNet--Classifying_Soil_Texture'}>Github: https://github.com/gitLamHoang/SoilNet--Classifying_Soil_Texture</Link>
+                                <Link
+                                href="https://github.com/gitLamHoang/SoilNet--Classifying_Soil_Texture"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()}
+                                className="inline-flex items-center gap-3"
+                                >
+                                <span
+                                    style={{
+                                    color: '#065A4C',
+                                    textAlign: 'justify',
+                                    fontFamily: 'Abhaya Libre',
+                                    fontSize: '28px',
+                                    fontStyle: 'normal',
+                                    fontWeight: 700,
+                                    lineHeight: '36px',
+                                    textDecorationLine: 'underline',
+                                    textDecorationStyle: 'solid',
+                                    textDecorationSkipInk: 'auto',
+                                    textDecorationThickness: 'auto',
+                                    textUnderlineOffset: 'auto',
+                                    textUnderlinePosition: 'from-font',
+                                    }}
+                                >
+                                    GitHub:
+                                </span>
+
+                                <div className="w-[53px] h-[53px] bg-white rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition-transform duration-200">
+                                    <Image
+                                    src="/github.png"
+                                    alt="GitHub Repository"
+                                    width={47}
+                                    height={47}
+                                    className="rounded-full"
+                                    />
+                                </div>
+                                </Link>
+
                                 <div className="flex">
                                     <Image src={'/soil-19.png'} alt="" width={396} height={205}></Image>
                                     <Image src={'/soil-20.png'} alt="" width={726} height={205}></Image>
@@ -458,12 +503,13 @@ export default function SoilPage() {
                                     <div>Another webinar I hosted during my time at Soils and Fertilizer Institute was with MsC Eliot Vas and Professor Pham Quang Ha - Vice President of the Soil Federation of Vietnam. Meeting Eliot helped me learn about the agriculture and soil environment sector in Europe</div>
                                 </div>
                                 <div className="flex-5">
-                                    <iframe width="627" height="354" src="https://www.youtube.com/embed/Ee49N1dFkZ8" title="[ReSoil] ReSoil và hành trình kết nối quốc tế" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-
+                                    {/* <iframe width="627" height="354" src="https://www.youtube.com/embed/Ee49N1dFkZ8" title="[ReSoil] ReSoil và hành trình kết nối quốc tế" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+                                    <Image src={'/soil-63.png'} alt="" width={627} height={354}></Image>
                                     <div className="pb-6 border-b-2">Stepping into the Soils and Fertilizers Institute on my first day, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets soil.</div>
                                     <Image className="pt-6" src={'/soil-41.png'} alt="" width={627} height={354}></Image>
-                                    <Image src={'/soil-42.png'} alt="" width={627} height={354}></Image>
-                                    <div>During my Internship at the Soils and Fertilizer Institute, I had the opportunities to host a webinar with Professor Walter Carciochi and Professor Patricio Grassini from Nebraska-Lincoln University, listening to their research on the impact of Kali on soil</div>
+                                    {/* <Image src={'/soil-42.png'} alt="" width={627} height={354}></Image> */}
+                                    <iframe width="627" height="354" src="https://www.youtube.com/embed/Ow7dkIqaFUA?si=U9Mp9IyGh9bqHbzc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                    <div>During my Internship at the Soils and Fertilizer Institute, I had the opportunities to host a webinar with Professor Walter Carciochi and Professor Patricio Grassini from Nebraska-Lincoln University, questioning about the plausibility of applying AI in Agriculture.</div>
                                 </div>
                             </div>
                             <div>
