@@ -64,7 +64,7 @@ const gal2 = [
         describe: "First thing after becoming a President, I organized a tryout session, where we invited National Athletes to cast our applicants",
         link: "",
     }, {
-        imglink: "/athletic-13.png",
+        imglink: "/athletic-38.png",
         title: "",
         describe: "Our first meeting, where we got to do some icebreakers and bonding.",
         link: "",
@@ -176,7 +176,7 @@ const gal4 = [
         imglink: "/athletic-33.png",
         title: "",
         describe: "Welcome back to ABC’2025, where I took the risk and made the tournament national. 712 athletes from 10 provinces, $5000 in total organizing costs. It’s gonna be a long tournament.",
-        link: "",
+        link: "https://daibieunhandan.vn/hon-700-hoc-sinh-tham-du-giai-the-thao-ams-badminton-championship-2025-10380425.html?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&fbclid=IwY2xjawNGD5RleHRuA2FlbQIxMQABHuTfLT4CVHHlyZi43Qc9HP0moJBfPFsdsUmQs0yI1MKHn4XDg5hHs4MnvhwS_aem_fsV00h-2cnoQwdWANggOKA",
     }, {
         imglink: "/athletic-34.png",
         title: "",
@@ -222,7 +222,7 @@ export default function Athletic() {
             <div className={`-space-y-20 -mt-40 ${active ? '' : "*:hover:scale-105"}`}>
                 <div className={`relative ${active === 'a' ? "h-[1600]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('a')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[63px] font-[Judson] font-bold text-left">
                             Capital Swimming and Diving Club
                         </div>
                         <div className={`${active === 'a' ? 'block' : 'hidden'}`}>
@@ -241,7 +241,7 @@ export default function Athletic() {
                 </div>
                 <div className={`relative ${active === 'b' ? "h-[900]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('b')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[63px] font-[Judson] font-bold text-left">
                             Badminton Ams Club
                         </div>
                         <div className={`${active === 'b' ? 'block' : 'hidden'}`}>
@@ -257,7 +257,7 @@ export default function Athletic() {
 
                 <div className={`relative ${active === 'c' ? "h-[1140]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('c')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[63px] font-[Judson] font-bold text-left">
                             Hanoi Chess Hub & Ams Chess Academy
                         </div>
                         <div className={`${active === 'c' ? 'block' : 'hidden'}`}>
@@ -274,7 +274,7 @@ export default function Athletic() {
 
                 <div className={`relative ${active === 'd' ? "h-[1140]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('d')}>
-                        <div className="text-[89px] font-[Judson] font-bold text-left">
+                        <div className="text-[63px] font-[Judson] font-bold text-left">
                             Ams Badminton Championship
                         </div>
                         <div className={`${active === 'd' ? 'block' : 'hidden'}`}>
