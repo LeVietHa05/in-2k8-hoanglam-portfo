@@ -240,7 +240,7 @@ export default function Athletic() {
                         </div>
                     </div>
                 </div>
-                <div className={`relative ${active === 'b' ? "h-[900]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'b' ? "h-[960]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('b')}>
                         <div className="text-[63px] font-[Judson] font-bold text-left">
                             Badminton Ams Club
