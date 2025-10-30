@@ -142,62 +142,72 @@ const per3 = [
 
 const gal4 = [
     {
-        imglink: "/soil-43.png",
+        imglink: "/soil-68.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-44.png",
+        imglink: "/soil-69.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-45.png",
+        imglink: "/soil-70.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-46.png",
+        imglink: "/soil-71.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-47.png",
+        imglink: "/soil-72.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-48.png",
+        imglink: "/soil-73.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-49.png",
+        imglink: "/soil-74.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-50.png",
+        imglink: "/soil-75.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-51.png",
+        imglink: "/soil-76.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-52.png",
+        imglink: "/soil-77.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-53.png",
+        imglink: "/soil-78.jpg",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-54.png",
+        imglink: "/soil-79.jpg",
+        title: "",
+        describe: "",
+        link: ""
+    }, {
+        imglink: "/soil-80.jpg",
+        title: "",
+        describe: "",
+        link: ""
+    }, {
+        imglink: "/soil-81.jpg",
         title: "",
         describe: "",
         link: ""
@@ -442,7 +452,7 @@ export default function SoilPage() {
                             <div className="text-[28px]">
                                 In 2023, I founded Resoil, a non-profit project driven by the desire to restore and improve agricultural land for Vietnamese farmers, while simultaneously igniting the fire of knowledge for students across Southeast Asia. It was the moment I realized that the Mathematical and Scientific knowledge which once fueled my personal passion could now become the energy to regenerate life itself.
                             </div>
-                            <Image src={'/soil-34.png'} alt="" width={1245} height={381}></Image>
+                            <Image src={'/soil-66.png'} alt="" width={1245} height={381}></Image>
                             <div className="pb-10 border-b-2">
                                 With a core team of eight members, I organized weekly training sessions on soil restoration, agricultural sensors, and environmental data analysis. Furthermore, we collaborated monthly with five experts from the Vietnam National University of Agriculture to conduct in-depth research on microorganisms, IoT technology, and sustainable solutions.
                             </div>
@@ -520,13 +530,13 @@ export default function SoilPage() {
                     </div>
                 </div>
 
-                <div className={`relative ${active === 'f' ? "h-[500]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'f' ? "h-[970]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('f')}>
                         <div className="text-[89px] font-[Judson] font-bold ">
                             Portfolio
                         </div>
                         <div className={`${active === 'f' ? 'block' : 'hidden'} space-y-10`}>
-                            <Gallery items={gal4} />
+                            <Gallery items={gal4} itemsPerPage={1}/>
                         </div>
                     </div>
                 </div>
