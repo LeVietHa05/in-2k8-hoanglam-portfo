@@ -32,12 +32,12 @@ const gal1 = [
     }, {
         imglink: "/athletic-6.png",
         title: "",
-        describe: "Finally, a Bronze Medal for 100m freestyle at the Hanoi Swim Competition.",
+        describe: "First Prize in the Bai Tu Long Bay Open Water Swimming Championship (Vietnam, 2022)",
         link: "",
     }, {
         imglink: "/athletic-7.png",
         title: "",
-        describe: "Finally, a Bronze Medal for 100m freestyle at the Hanoi Swim Competition..",
+        describe: "Ranked 5 in the National Relay 4 x 100",
         link: "",
     }, {
         imglink: "/athletic-8.png",
