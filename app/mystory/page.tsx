@@ -97,7 +97,7 @@ export default function Mystory() {
                 </div>
             </div>
 
-            <div className={`${activesoil ? '-mt-100' : `${activemath ? "-mt-60" : "-mt-100"}`} ${!activeathletic ? " h-[487px]" : " h-[1030px]"} relative overflow-hidden transition-all duration-1000 z-1`}>
+            <div className={`${activesoil ? '-mt-100' : `${activemath ? "-mt-60" : "-mt-100"}`} ${!activeathletic ? " h-[487px]" : " h-[1400px]"} relative overflow-hidden transition-all duration-1000 z-1`}>
                 <Image src={`${!activeathletic ? '/mystory-bg-6-1.png' : '/mystory-bg-6.png'}`} fill alt="" className="absolute -right-10 -bottom-10 "></Image>
                 <div className="relative z-1 px-[69px] py-[25] text-[28px] text-[#065A4C] font-[Abhaya_Libre]">
                     <div className=" pb-10 text-[89px] font-[Judson] font-bold flex" onClick={handelAthletic}>

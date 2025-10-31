@@ -14,11 +14,11 @@ interface GalleryItem {
 interface GalleryProps {
   items: GalleryItem[]
   isMathPage?: boolean
+  itemsPerPage?: number
 }
 
-export default function Gallery({ items, isMathPage }: GalleryProps) {
+export default function Gallery({ items, isMathPage, itemsPerPage = 3 }: GalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const itemsPerPage = 3
 
   const totalPages = Math.ceil(items.length / itemsPerPage)
 
@@ -43,8 +43,8 @@ export default function Gallery({ items, isMathPage }: GalleryProps) {
                 <Image
                   src={item.imglink}
                   alt={item.title || 'Gallery image'}
-                  width={300}
-                  height={200}
+                  width={itemsPerPage === 1 ? 933 : 300}
+                  height={itemsPerPage === 1 ? 525 : 200}
                   className="gallery-image"
                 />
               </a>
@@ -52,8 +52,8 @@ export default function Gallery({ items, isMathPage }: GalleryProps) {
               <Image
                 src={item.imglink}
                 alt={item.title || 'Gallery image'}
-                width={300}
-                height={200}
+                width={itemsPerPage === 1 ? 933 : 300}
+                height={itemsPerPage === 1 ? 525 : 200}
                 className="gallery-image"
               />
             )}
@@ -130,7 +130,7 @@ export default function Gallery({ items, isMathPage }: GalleryProps) {
           flex-direction: column;
           align-items: flex-start;
           text-align: left;
-          max-width: 300px;
+          max-width: ${itemsPerPage === 1 ? '933px' : '300px'};
         }
 
         .gallery-image {

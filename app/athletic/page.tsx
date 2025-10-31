@@ -32,12 +32,12 @@ const gal1 = [
     }, {
         imglink: "/athletic-6.png",
         title: "",
-        describe: "Finally, a Bronze Medal for 100m freestyle at the Hanoi Swim Competition.",
+        describe: "First Prize in the Bai Tu Long Bay Open Water Swimming Championship (Vietnam, 2022)",
         link: "",
     }, {
         imglink: "/athletic-7.png",
         title: "",
-        describe: "Finally, a Bronze Medal for 100m freestyle at the Hanoi Swim Competition..",
+        describe: "Ranked 5 in the National Relay 4 x 100",
         link: "",
     }, {
         imglink: "/athletic-8.png",
@@ -109,12 +109,12 @@ const gal2 = [
 
 const gal3 = [
     {
-        imglink: "/athletic-21.png",
+        imglink: "/athletic-41.png",
         title: "",
         describe: "Summer 2024 marked my first achievement in tournaments' organization. From becoming the Vice-Organizer of Hanoi's largest student-based tournament to the Head Organizer of Checkmate Master - a tournament for international kids in my community, the experience gave me a lot of exposure to organizing.",
         link: "",
     }, {
-        imglink: "/athletic-22.png",
+        imglink: "/athletic-40.png",
         title: "",
         describe: "Soon, as I had proved myself through countless leadership positions and also as a trustworthy organizer, I was voted as the Vice President of Ams Chess Academy (ACA) - Hanoi's Largest chess club Together with our core team of 8 people, we supported each other through the 9th generation, where ACA became most successful",
         link: "",
@@ -159,7 +159,7 @@ const gal3 = [
         describe: "Together, after countless tournaments and events. I decided, it is time I gave back to the community of chess players: organizing chess classes for kids in my area. I was lucky to be accompanied with kids internationally.",
         link: "",
     }, {
-        imglink: "/athletic-21.png",
+        imglink: "/athletic-43.png",
         title: "",
         describe: "Hajun, a highly talented Korean boy. I was lucky enough to be teaching him chess. He is 1000 in Elo now!!",
         link: "",
@@ -231,7 +231,8 @@ export default function Athletic() {
                             <Gallery items={gal1} />
 
                             <div className="flex items-center justify-center">
-                                <Image src={'/athletic-9.png'} alt="" width={747} height={444}></Image>
+                                {/* <Image src={'/athletic-9.png'} alt="" width={747} height={444}></Image> */}
+                                <iframe width="747" height="444" src="https://www.youtube.com/embed/ocdOPRpUobY?si=k4zsf87LmY3OH276" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="rounded-2xl shadow-lg"></iframe>
                             </div>
                             <div className="text-center mt-10 w-2/3 mx-auto">
                                 A simple 4km open water-swim at Bai Tu Long Bay. Have you ever swum between rocks and cliffs? I have.
@@ -239,7 +240,7 @@ export default function Athletic() {
                         </div>
                     </div>
                 </div>
-                <div className={`relative ${active === 'b' ? "h-[900]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'b' ? "h-[960]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('b')}>
                         <div className="text-[63px] font-[Judson] font-bold text-left">
                             Badminton Ams Club
