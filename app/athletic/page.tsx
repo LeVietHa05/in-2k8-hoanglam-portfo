@@ -193,9 +193,9 @@ const gal4 = [
         describe: "Appreciate my fellow countrymen who had travelled hundreds of kilometers to join the tournament!",
         link: "",
     }, {
-        imglink: "/athletic-37.png",
+        imglink: "/athletic-45.png",
         title: "",
-        describe: "Having a hotpot right after a successful tournament. What could be more rewarding?",
+        describe: "Thanks members of the  organizing committee, the tournament would not have been so successful without your contributions.",
         link: "",
     },
 ]

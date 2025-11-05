@@ -50,7 +50,7 @@ const gal1 = [
     {
         imglink: "/math-8.png",
         title: "2023 -  International",
-        describe: "International Kangaroo Science Contest",
+        describe: "Gold Award, International Kangaroo Science Contest",
         link: "",
     },
     {
