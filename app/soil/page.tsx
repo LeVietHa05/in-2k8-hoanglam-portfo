@@ -9,17 +9,7 @@ const gal1 = [{
     title: "Silver Medal",
     describe: "Led a 3-member team to develop Restorator-Bot, a robot that revitalizes dead lands by collecting debris and removing obstacles.",
     link: "https://www.youtube.com/watch?v=_2tThEfbVnU",
-}, {
-    imglink: "/soil-3.png",
-    title: "Silver Medal",
-    describe: "Developed a dataset containing 2000 images to train a Computer Vision model to classify waste",
-    link: "",
-}, {
-    imglink: "/soil-4.png",
-    title: "Gold Medal",
-    describe: "LDeveloped an LSTM model forecasting soil moisture trends.",
-    link: "https://www.youtube.com/watch?v=lUgG_Kv0j9g",
-}, {
+},{
     imglink: "/soil-5.png",
     title: "Gold Medal",
     describe: "Prepare a machine learning dataset for printed circuit board waste classification",
@@ -33,7 +23,17 @@ const gal1 = [{
     imglink: "/soil-7.png",
     title: "Gold Medal",
     describe: "Manipulating photocatalytic reactions to cleanse the contaminated water.",
-    link: "https://www.youtube.com/watch?v=D",
+    link: "https://www.youtube.com/watch?v=Du53xuwsgVc",
+},{
+    imglink: "/soil-3.png",
+    title: "Silver Medal",
+    describe: "Developed a dataset containing 2000 images to train a Computer Vision model to classify waste",
+    link: "",
+}, {
+    imglink: "/soil-4.png",
+    title: "Gold Medal",
+    describe: "LDeveloped an LSTM model forecasting soil moisture trends.",
+    link: "https://www.youtube.com/watch?v=lUgG_Kv0j9g",
 },]
 
 const per1 = [
@@ -81,7 +81,7 @@ const per2 = [
         imglink: "/soil-21.png",
         title: "",
         describe: "The project’s impact resonated beyond the fields – I was invited to share my journey, inspiration, and the story behind the device in national newspapers and media outlets, where technology and purpose found a voice together.",
-        link: "https://nongnghiepmoitruong.vn/hoc-sinh-lop-12-sang-che-xeng-thong-minh-do-do-am-phuc-vu-mua-mang-d778044.html"
+        link: "https://en.baoquocte.vn/smart-moisture-measuring-shovel-a-weather-assistant-for-farmers-330581.html"
     }, {
         imglink: "/soil-22.png",
         title: "",
@@ -514,7 +514,8 @@ export default function SoilPage() {
                                 </div>
                                 <div className="flex-5">
                                     {/* <iframe width="627" height="354" src="https://www.youtube.com/embed/Ee49N1dFkZ8" title="[ReSoil] ReSoil và hành trình kết nối quốc tế" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-                                    <Image src={'/soil-63.png'} alt="" width={627} height={354}></Image>
+                                    {/* <Image src={'/soil-63.png'} alt="" width={627} height={354}></Image> */}
+                                    <iframe width="627" height="354" src="https://www.youtube.com/embed/2B5EMcx97LE?si=dUHXWcUOMazlL_to" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                     <div className="pb-6 border-b-2">Stepping into the Soils and Fertilizers Institute on my first day, I was filled with anticipation and curiosity. The air buzzed with the promise of discovery, and I was eager to immerse myself in the world where science meets soil.</div>
                                     <Image className="pt-6" src={'/soil-41.png'} alt="" width={627} height={354}></Image>
                                     {/* <Image src={'/soil-42.png'} alt="" width={627} height={354}></Image> */}
