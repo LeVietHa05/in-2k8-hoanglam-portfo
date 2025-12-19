@@ -142,76 +142,89 @@ const per3 = [
 
 const gal4 = [
     {
-        imglink: "/soil-68.jpg",
+        imglink: "/soil-82.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-69.jpg",
+        imglink: "/soil-83.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-70.jpg",
+        imglink: "/soil-84.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-71.jpg",
+        imglink: "/soil-85.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-72.jpg",
+        imglink: "/soil-86.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-73.jpg",
+        imglink: "/soil-87.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-74.jpg",
+        imglink: "/soil-88.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-75.jpg",
+        imglink: "/soil-89.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-76.jpg",
+        imglink: "/soil-90.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-77.jpg",
+        imglink: "/soil-91.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-78.jpg",
+        imglink: "/soil-92.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-79.jpg",
+        imglink: "/soil-93.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-80.jpg",
+        imglink: "/soil-94.png",
         title: "",
         describe: "",
         link: ""
     }, {
-        imglink: "/soil-81.jpg",
+        imglink: "/soil-95.png",
+        title: "",
+        describe: "",
+        link: ""
+    }, {
+        imglink: "/soil-96.png",
+        title: "",
+        describe: "",
+        link: ""
+    }, {
+        imglink: "/soil-97.png",
         title: "",
         describe: "",
         link: ""
     }
+
+
+
 ]
 
 export default function SoilPage() {
