@@ -64,7 +64,7 @@ const gal2 = [
         describe: "First thing after becoming a President, I organized a tryout session, where we invited National Athletes to cast our applicants",
         link: "",
     }, {
-        imglink: "/athletic-38.png",
+        imglink: "/athletic-38.jpg",
         title: "",
         describe: "Our first meeting, where we got to do some icebreakers and bonding.",
         link: "",
