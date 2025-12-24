@@ -430,10 +430,10 @@ export default function SoilPage() {
 
                                 <div className="flex">
                                     <Image src={'/soil-19.png'} alt="" width={396} height={205}></Image>
-                                    <Image src={'/soil-20.png'} alt="" width={726} height={205}></Image>
+                                    <Image src={'/soil-99.png'} alt="" width={726} height={205}></Image>
                                 </div>
                                 <p>
-                                    My journey with SoilNet began when I met my mentor Leonard Gleyzer, MSc in Applied Mathematics at Brown University, where I dove deep into the roots of neural networks – the mathematics, the operations, and the algorithms that breathe logic into learning.
+                                    My journey with SoilNet began when I met my mentor Majid Mahzoon. Assoc. Professor at MS at Carnegie Mellon University, where I dove deep into the roots of neural networks – the mathematics, the operations, and the algorithms that breathe logic into learning.
                                 </p>
                                 <p>After grasping the essence of the Multi-Layer Perceptron – the simplest yet most profound architecture of neural networks, I began shaping an idea: using AI to classify soil textures. Leonard then guided me toward Convolutional Neural Networks, models crafted for images, and this marked the beginning of my Deep Learning journey.</p>
                                 <Gallery items={per3} />
