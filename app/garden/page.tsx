@@ -53,7 +53,9 @@ const data3 = [
         t: "Through the World Scholar’s Cup, I strengthened my analytical reasoning and interdisciplinary thinking — connecting science, logic and literature to real-world problems."
     }, {
         i: "/garden-17.png",
-        t: "I conversed with international peers about global challenges — environment, energy, technology — and realized that mathematical reasoning could unlock solutions to them all. That year, I placed 3rd Globally, ranking higher than teams from 20+ countries",
+        t1: "I conversed with international peers about global challenges — environment, energy, technology — and realized that mathematical reasoning could unlock solutions to them all.",
+        t2: "That year, I placed 3rd Globally, earning a Gold Medal in Debate, Writing, and Social Studies."
+
     }, {
         i: "/garden-18.png",
         t: "After all, Debate is a field that trained me to be a person who could communicate my thoughts confidently, fluently, and expressively."
@@ -290,6 +292,8 @@ export default function MathPage() {
                                         <div key={i}>
                                             <Image src={e.i} alt="" height={252} width={367}></Image>
                                             <div className="text-base p-3">
+                                                <p>{e.t1}</p>
+                                                <p>{e.t2}</p>
                                                 {e.t}
                                                 {e.l && (
                                                 <>
@@ -314,13 +318,13 @@ export default function MathPage() {
                     </div>
                 </div>
 
-                <div className={`relative ${active === 'e' ? "h-[600]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'e' ? "h-[700]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('e')}>
                         <div className="text-[73px] font-[Judson] font-bold text-left">
-                            Volunteering
+                            Volunteering (We Raise)
                         </div>
                         <div className={`${active === 'e' ? 'block' : 'hidden'}`}>
-                            Volunteering taught me that impact isn’t measured by trophies or titles, but by the lives we touch – in every class I teach, every smile I spark, every act of giving back.
+                            Volunteering taught me that impact isn’t measured by trophies or titles, but by the lives we touch – in every class I teach, every smile I spark, every act of giving back. And every events with We Raise gave me the chance to support more people.
                             <Gallery items={gal1} />
                         </div>
                     </div>
