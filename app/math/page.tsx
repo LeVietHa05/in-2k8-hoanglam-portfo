@@ -156,10 +156,31 @@ export default function MathPage() {
                             During that journey, I stumbled upon a chapter intertwining matrices and number theory. An example on the balancing matrix of the Fibonacci sequence caught my eye, and a quiet question bloomed within me: could this elegant harmony be extended – to the Pell and Pell–Lucas sequences, too?
                             <Image src={'/math-20.png'} alt="" width={1103} height={422}></Image>
                             <div className="flex my-10 gap-10">
-                                <Image src={'/math-32.png'} alt="" width={549} height={572}></Image>
-                                <div>What began as a spark – a question of balance in Fibonacci’s rhythm – grew into a generalized matrix framework uniting Fibonacci and Pell models. Through linear algebra and induction, I proved their hidden harmonies, unveiling Binet-type, Cassini-like, and divisibility properties through determinants and eigenvalues. The work now lives on in the HNUE Journal of Science: Natural Science.
-                                </div>
+
+                            <div className="flex flex-col shrink-0">
+                                <Image
+                                src="/math-32.jpg"
+                                alt=""
+                                width={549}
+                                height={572}
+                                />
+
+                                <Link
+                                href="https://hnuejs.edu.vn/ns/article/view/1214"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-2 font-bold text-[#065A4C] hover:underline text-center"
+                                onClick={(e) => e.stopPropagation()}
+                                >
+                                [View here]
+                                </Link>
                             </div>
+
+                            <div>
+                                What began as a spark – a question of balance in Fibonacci’s rhythm – grew into a generalized matrix framework uniting Fibonacci and Pell models. Through linear algebra and induction, I proved their hidden harmonies, unveiling Binet-type, Cassini-like, and divisibility properties through determinants and eigenvalues. The work now lives on in the HNUE Journal of Science: Natural Science.
+                            </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
