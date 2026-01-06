@@ -339,7 +339,7 @@ export default function SoilPage() {
                     </div>
                 </div>
 
-                <div className={`relative ${active === 'c' ? "h-[3840]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
+                <div className={`relative ${active === 'c' ? "h-[3870]" : "h-[311]"} overflow-hidden transition-all duration-1000 z-1 bg-gradient-to-b from-[#A2C65F] to-[#F0F2A6] rounded-[60px]`}>
 
                     <div className="relative z-1 px-[67] py-[37] " onClick={() => handleClick('c')}>
                         <div className="text-[89px] font-[Judson] font-bold ">
@@ -433,16 +433,16 @@ export default function SoilPage() {
                                     <Image src={'/soil-99.png'} alt="" width={726} height={205}></Image>
                                 </div>
                                 <p>
-                                    My journey with SoilNet began when I met my mentor Majid Mahzoon. Assoc. Professor at MS at Carnegie Mellon University, where I dove deep into the roots of neural networks – the mathematics, the operations, and the algorithms that breathe logic into learning.
+                                    My journey with SoilNet began when I met my mentor Majid Mahzoon, PhD at Carnegie Mellon University where I dove deep into the roots of neural networks – the mathematics, the operations, and the algorithms that breathe logic into learning.
                                 </p>
-                                <p>After grasping the essence of the Multi-Layer Perceptron – the simplest yet most profound architecture of neural networks, I began shaping an idea: using AI to classify soil textures. Leonard then guided me toward Convolutional Neural Networks, models crafted for images, and this marked the beginning of my Deep Learning journey.</p>
+                                <p>After grasping the essence of the Multi-Layer Perceptron – the simplest yet most profound architecture of neural networks, I began shaping an idea: using AI to classify soil textures. Majid then guided me toward Convolutional Neural Networks, models crafted for images, and this marked the beginning of my Deep Learning journey.</p>
                                 <Gallery items={per3} />
                                 <div className="flex gap-8">
                                     <div className="flex-3">
                                         <Image src={'/soil-32.png'} alt="" width={431} height={331}></Image>
                                     </div>
                                     <div className="flex-4 text-justify">
-                                        Then, I customized a Convolutional Neural Network – what I proudly called the SoilNet model. After consulting Leonard for guidance on hyperparameter tuning, I refined its architecture until it reached a remarkable 99.46% accuracy, a testament to precision born from curiosity and iteration.
+                                        Then, I customized a Convolutional Neural Network – what I proudly called the SoilNet model. After consulting Majid for guidance on hyperparameter tuning, I refined its architecture until it reached a remarkable 99.46% accuracy, a testament to precision born from curiosity and iteration.
                                     </div>
                                 </div>
                                 <div>
